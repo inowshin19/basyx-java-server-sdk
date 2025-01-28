@@ -1,7 +1,0 @@
-{
-	"administration.creator.keys": {
-		"$elemMatch": {
-			"type": "key1"
-		}
-	}
-}

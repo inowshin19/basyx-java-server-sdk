@@ -1,8 +1,0 @@
-[
-    {
-        "uniqueId": "EnvironmentalSensorMQTT",
-        "serverUrl": "mosquitto",
-        "serverPort": 1883,
-        "topic": "EnvironmentalSensor/CombinedData"
-    }
-]
