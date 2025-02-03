@@ -241,8 +241,8 @@ public class AasDiscoveryServiceApi {
    * @return GetAllAssetAdministrationShellIdsByAssetLink200Response
    * @throws ApiException if fails to make API call
    */
-  public CursorResult<List<SpecificAssetId>> getAllAssetAdministrationShellIdsByAssetLink(List<String> assetIds, Integer limit, String cursor) throws ApiException {
-    ApiResponse<Base64UrlEncodedCursorResult<List<SpecificAssetId>>> localVarResponse = getAllAssetAdministrationShellIdsByAssetLinkWithHttpInfo(assetIds, limit, cursor);
+  public CursorResult<List<String>> getAllAssetAdministrationShellIdsByAssetLink(List<String> assetIds, Integer limit, String cursor) throws ApiException {
+    ApiResponse<Base64UrlEncodedCursorResult<List<String>>> localVarResponse = getAllAssetAdministrationShellIdsByAssetLinkWithHttpInfo(assetIds, limit, cursor);
     return localVarResponse.getData();
   }
 
@@ -255,7 +255,7 @@ public class AasDiscoveryServiceApi {
    * @return ApiResponse&lt;GetAllAssetAdministrationShellIdsByAssetLink200Response&gt;
    * @throws ApiException if fails to make API call
    */
-  public ApiResponse<Base64UrlEncodedCursorResult<List<SpecificAssetId>>> getAllAssetAdministrationShellIdsByAssetLinkWithHttpInfo(List<String> assetIds, Integer limit, String cursor) throws ApiException {
+  public ApiResponse<Base64UrlEncodedCursorResult<List<String>>> getAllAssetAdministrationShellIdsByAssetLinkWithHttpInfo(List<String> assetIds, Integer limit, String cursor) throws ApiException {
     HttpRequest.Builder localVarRequestBuilder = getAllAssetAdministrationShellIdsByAssetLinkRequestBuilder(assetIds, limit, cursor);
     try {
       HttpResponse<InputStream> localVarResponse = memberVarHttpClient.send(
@@ -270,7 +270,7 @@ public class AasDiscoveryServiceApi {
         }
 
           return new ApiResponse<>(localVarResponse.statusCode(), localVarResponse.headers().map(),
-                  localVarResponse.body() == null ? null : memberVarObjectMapper.readValue(localVarResponse.body(), new TypeReference<Base64UrlEncodedCursorResult<List<SpecificAssetId>>>() {
+                  localVarResponse.body() == null ? null : memberVarObjectMapper.readValue(localVarResponse.body(), new TypeReference<Base64UrlEncodedCursorResult<List<String>>>() {
                   }) // closes the InputStream
           );
 

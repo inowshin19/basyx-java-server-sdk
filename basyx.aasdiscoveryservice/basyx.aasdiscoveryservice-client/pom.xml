@@ -27,6 +27,16 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.eclipse.digitaltwin.basyx</groupId>
+			<artifactId>basyx.aasdiscoveryservice-http</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.digitaltwin.basyx</groupId>
+			<artifactId>basyx.aasdiscoveryservice-backend-inmemory</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.eclipse.digitaltwin.aas4j</groupId>
 			<artifactId>aas4j-model</artifactId>
 		</dependency>
